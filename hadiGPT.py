@@ -10,7 +10,7 @@ def generate_response(prompt, api_key):
         max_tokens=50,
         n=1,
         stop=None,
-        temperature=0.5,
+        temperature=0.7,
     )
 
     return response.choices[0].text.strip()
@@ -21,12 +21,15 @@ def main():
     print("Welcome to HadiGPT")
     print("Type 'quit' to exit.")
 
-    while True:
-        prompt = input("You: ")
+    user_context = "The user is interested in technology and science and various topics related to physics."
 
-        if prompt.lower() == "quit":
+    while True:
+        user_input = input("You: ")
+
+        if user_input.lower() == "quit":
             break
 
+        prompt = f"{user_context}\nUser: {user_input}\nChatbot:"
         response = generate_response(prompt, api_key)
         print(f"Chatbot: {response}")
 
