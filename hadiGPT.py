@@ -1,10 +1,11 @@
 import openai
+import os
 
 def generate_response(prompt, api_key):
     openai.api_key = api_key
 
     response = openai.Completion.create(
-        engine="davinci-codex",
+        engine="davinci",
         prompt=prompt,
         max_tokens=50,
         n=1,
@@ -15,7 +16,7 @@ def generate_response(prompt, api_key):
     return response.choices[0].text.strip()
 
 def main():
-    api_key = "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"
+    api_key = os.environ.get("OPENAI_API_KEY")
 
     print("Welcome to HadiGPT")
     print("Type 'quit' to exit.")
