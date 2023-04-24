@@ -33,7 +33,7 @@ def main():
         if user_input.lower() == "quit":
             break
 
-        prompt = f"{user_context}\nUser: {user_input}\nChatbot:"
+        prompt = f"{user_context}\nUser asks: {user_input}\nPlease provide an informative answer:"
         response = generate_response(prompt, api_key)
         print(f"Chatbot: {response}")
 
