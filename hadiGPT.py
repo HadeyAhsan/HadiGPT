@@ -15,10 +15,10 @@ def generate_response(prompt, api_key):
     return response.choices[0].text.strip()
 
 def main():
-    api_key = "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"
+    api_key = "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"
 
-    print("Welcome to the GPT-3 chatbot!")
-    print("Type 'quit' to exit the chatbot.")
+    print("Welcome to HadiGPT")
+    print("Type 'quit' to exit.")
 
     while True:
         prompt = input("You: ")
