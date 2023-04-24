@@ -33,9 +33,9 @@ def main():
         if user_input.lower() == "quit":
             break
 
-        prompt = f"{user_context}\nUser asks: {user_input}\nPlease provide an informative answer:"
+        prompt = f"Given that {user_context}, Answer the following question: {user_input}"
         response = generate_response(prompt, api_key)
-        print(f"Chatbot: {response}")
+        print(f"HadiGPT: {response}")
 
 if __name__ == "__main__":
     main()
