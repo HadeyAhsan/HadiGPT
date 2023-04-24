@@ -1,5 +1,5 @@
 # HadiGPT
-A personalized chatbot created using OpenAI's GPT-3 Davinci model. This chatbot has a focus on Science and Technology with features like: Fine-tuned GPT-3 parameters, user-specific context, and the ability to handle multi-turn conversations. As I progress with this project, I will tweak and personalize this chatbot to give smarter, and more accurate responses.
+A personalized chatbot (using my name) created using OpenAI's GPT-3 Davinci model. This chatbot has a focus on Science and Technology with features like: Fine-tuned GPT-3 parameters, user-specific context, and the ability to handle multi-turn conversations. As I progress with this project, I will tweak and personalize this chatbot to give smarter, and more accurate responses.
 
 #  What is GPT-3?
 GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art natural language processing (NLP) model developed by OpenAI. The model is based on the transformer architecture and has been trained on a massive amount of text data, making it capable of generating human-like responses to natural language input.
