@@ -18,8 +18,14 @@ def generate_response(prompt, api_key):
 def main():
     api_key = os.environ.get("OPENAI_API_KEY")
 
+    if api_key is None:
+        print("Error: Please set the OPENAI_API_KEY environment variable.")
+        exit(1)
+
     print("Welcome to HadiGPT")
     print("Type 'quit' to exit.")
+
+    conversation_history = ""
 
     while True:
         prompt = input("You: ")
